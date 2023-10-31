@@ -11,6 +11,13 @@
 		B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB34B2AF0CF5F007C850A /* ContentView.swift */; };
 		B8FBB34E2AF0CF61007C850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBB34D2AF0CF61007C850A /* Assets.xcassets */; };
 		B8FBB3512AF0CF61007C850A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBB3502AF0CF61007C850A /* Preview Assets.xcassets */; };
+		B8FBB3752AF0CFEE007C850A /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3742AF0CFEE007C850A /* LargeNavigationBar.swift */; };
+		B8FBB3772AF0CFF9007C850A /* SmallNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3762AF0CFF9007C850A /* SmallNavigationBar.swift */; };
+		B8FBB3792AF0D01F007C850A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3782AF0D01F007C850A /* NavigationBar.swift */; };
+		B8FBB37B2AF0D161007C850A /* AdaptiveNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB37A2AF0D161007C850A /* AdaptiveNavigationBar.swift */; };
+		B8FBB3802AF0D279007C850A /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB37F2AF0D279007C850A /* Screen.swift */; };
+		B8FBB3852AF0D385007C850A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3842AF0D385007C850A /* Color+Extensions.swift */; };
+		B8FBB3872AF0D461007C850A /* NavigationBarBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3862AF0D461007C850A /* NavigationBarBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		B8FBB3502AF0CF61007C850A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8FBB3562AF0CF61007C850A /* AdaptiveNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBB3602AF0CF61007C850A /* AdaptiveNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FBB3742AF0CFEE007C850A /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
+		B8FBB3762AF0CFF9007C850A /* SmallNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallNavigationBar.swift; sourceTree = "<group>"; };
+		B8FBB3782AF0D01F007C850A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		B8FBB37A2AF0D161007C850A /* AdaptiveNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveNavigationBar.swift; sourceTree = "<group>"; };
+		B8FBB37F2AF0D279007C850A /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		B8FBB3842AF0D385007C850A /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		B8FBB3862AF0D461007C850A /* NavigationBarBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,10 @@
 		B8FBB3482AF0CF5F007C850A /* AdaptiveNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				B8FBB3832AF0D37C007C850A /* Extensions */,
+				B8FBB3732AF0CFDC007C850A /* NavigationBar */,
 				B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */,
+				B8FBB37F2AF0D279007C850A /* Screen.swift */,
 				B8FBB34B2AF0CF5F007C850A /* ContentView.swift */,
 				B8FBB34D2AF0CF61007C850A /* Assets.xcassets */,
 				B8FBB34F2AF0CF61007C850A /* Preview Content */,
@@ -100,6 +117,26 @@
 				B8FBB3502AF0CF61007C850A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8FBB3732AF0CFDC007C850A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBB3742AF0CFEE007C850A /* LargeNavigationBar.swift */,
+				B8FBB3762AF0CFF9007C850A /* SmallNavigationBar.swift */,
+				B8FBB3782AF0D01F007C850A /* NavigationBar.swift */,
+				B8FBB37A2AF0D161007C850A /* AdaptiveNavigationBar.swift */,
+				B8FBB3862AF0D461007C850A /* NavigationBarBackground.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		B8FBB3832AF0D37C007C850A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBB3842AF0D385007C850A /* Color+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FBB3792AF0D01F007C850A /* NavigationBar.swift in Sources */,
 				B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */,
+				B8FBB3772AF0CFF9007C850A /* SmallNavigationBar.swift in Sources */,
+				B8FBB37B2AF0D161007C850A /* AdaptiveNavigationBar.swift in Sources */,
+				B8FBB3852AF0D385007C850A /* Color+Extensions.swift in Sources */,
+				B8FBB3872AF0D461007C850A /* NavigationBarBackground.swift in Sources */,
 				B8FBB34A2AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift in Sources */,
+				B8FBB3752AF0CFEE007C850A /* LargeNavigationBar.swift in Sources */,
+				B8FBB3802AF0D279007C850A /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

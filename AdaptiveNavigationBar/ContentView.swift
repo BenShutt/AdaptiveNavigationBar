@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Screen {
+            ForEach(0..<20) { _ in
+                Color.random
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+            }
         }
-        .padding()
     }
 }
 
