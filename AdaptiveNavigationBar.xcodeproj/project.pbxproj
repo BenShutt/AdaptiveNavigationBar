@@ -20,31 +20,12 @@
 		B8FBB3872AF0D461007C850A /* NavigationBarBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3862AF0D461007C850A /* NavigationBarBackground.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B8FBB3572AF0CF61007C850A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8FBB33E2AF0CF5F007C850A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8FBB3452AF0CF5F007C850A;
-			remoteInfo = AdaptiveNavigationBar;
-		};
-		B8FBB3612AF0CF61007C850A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8FBB33E2AF0CF5F007C850A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8FBB3452AF0CF5F007C850A;
-			remoteInfo = AdaptiveNavigationBar;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B8FBB3462AF0CF5F007C850A /* AdaptiveNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveNavigationBarApp.swift; sourceTree = "<group>"; };
 		B8FBB34B2AF0CF5F007C850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8FBB34D2AF0CF61007C850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8FBB3502AF0CF61007C850A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B8FBB3562AF0CF61007C850A /* AdaptiveNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8FBB3602AF0CF61007C850A /* AdaptiveNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBB3742AF0CFEE007C850A /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
 		B8FBB3762AF0CFF9007C850A /* SmallNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallNavigationBar.swift; sourceTree = "<group>"; };
 		B8FBB3782AF0D01F007C850A /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -56,20 +37,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		B8FBB3432AF0CF5F007C850A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8FBB3532AF0CF61007C850A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8FBB35D2AF0CF61007C850A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				B8FBB3462AF0CF5F007C850A /* AdaptiveNavigationBar.app */,
-				B8FBB3562AF0CF61007C850A /* AdaptiveNavigationBarTests.xctest */,
-				B8FBB3602AF0CF61007C850A /* AdaptiveNavigationBarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,42 +124,6 @@
 			productReference = B8FBB3462AF0CF5F007C850A /* AdaptiveNavigationBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8FBB3552AF0CF61007C850A /* AdaptiveNavigationBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8FBB36D2AF0CF61007C850A /* Build configuration list for PBXNativeTarget "AdaptiveNavigationBarTests" */;
-			buildPhases = (
-				B8FBB3522AF0CF61007C850A /* Sources */,
-				B8FBB3532AF0CF61007C850A /* Frameworks */,
-				B8FBB3542AF0CF61007C850A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8FBB3582AF0CF61007C850A /* PBXTargetDependency */,
-			);
-			name = AdaptiveNavigationBarTests;
-			productName = AdaptiveNavigationBarTests;
-			productReference = B8FBB3562AF0CF61007C850A /* AdaptiveNavigationBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B8FBB35F2AF0CF61007C850A /* AdaptiveNavigationBarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8FBB3702AF0CF61007C850A /* Build configuration list for PBXNativeTarget "AdaptiveNavigationBarUITests" */;
-			buildPhases = (
-				B8FBB35C2AF0CF61007C850A /* Sources */,
-				B8FBB35D2AF0CF61007C850A /* Frameworks */,
-				B8FBB35E2AF0CF61007C850A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8FBB3622AF0CF61007C850A /* PBXTargetDependency */,
-			);
-			name = AdaptiveNavigationBarUITests;
-			productName = AdaptiveNavigationBarUITests;
-			productReference = B8FBB3602AF0CF61007C850A /* AdaptiveNavigationBarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,14 +136,6 @@
 				TargetAttributes = {
 					B8FBB3452AF0CF5F007C850A = {
 						CreatedOnToolsVersion = 15.0.1;
-					};
-					B8FBB3552AF0CF61007C850A = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = B8FBB3452AF0CF5F007C850A;
-					};
-					B8FBB35F2AF0CF61007C850A = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = B8FBB3452AF0CF5F007C850A;
 					};
 				};
 			};
@@ -232,8 +153,6 @@
 			projectRoot = "";
 			targets = (
 				B8FBB3452AF0CF5F007C850A /* AdaptiveNavigationBar */,
-				B8FBB3552AF0CF61007C850A /* AdaptiveNavigationBarTests */,
-				B8FBB35F2AF0CF61007C850A /* AdaptiveNavigationBarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,20 +164,6 @@
 			files = (
 				B8FBB3512AF0CF61007C850A /* Preview Assets.xcassets in Resources */,
 				B8FBB34E2AF0CF61007C850A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8FBB3542AF0CF61007C850A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8FBB35E2AF0CF61007C850A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,34 +186,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8FBB3522AF0CF61007C850A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8FBB35C2AF0CF61007C850A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B8FBB3582AF0CF61007C850A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8FBB3452AF0CF5F007C850A /* AdaptiveNavigationBar */;
-			targetProxy = B8FBB3572AF0CF61007C850A /* PBXContainerItemProxy */;
-		};
-		B8FBB3622AF0CF61007C850A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8FBB3452AF0CF5F007C850A /* AdaptiveNavigationBar */;
-			targetProxy = B8FBB3612AF0CF61007C850A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B8FBB3682AF0CF61007C850A /* Debug */ = {
@@ -443,18 +321,22 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,90 +353,22 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B8FBB36E2AF0CF61007C850A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdaptiveNavigationBar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdaptiveNavigationBar";
-			};
-			name = Debug;
-		};
-		B8FBB36F2AF0CF61007C850A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdaptiveNavigationBar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdaptiveNavigationBar";
-			};
-			name = Release;
-		};
-		B8FBB3712AF0CF61007C850A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AdaptiveNavigationBar;
-			};
-			name = Debug;
-		};
-		B8FBB3722AF0CF61007C850A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.benshutt.AdaptiveNavigationBarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AdaptiveNavigationBar;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -575,24 +389,6 @@
 			buildConfigurations = (
 				B8FBB36B2AF0CF61007C850A /* Debug */,
 				B8FBB36C2AF0CF61007C850A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8FBB36D2AF0CF61007C850A /* Build configuration list for PBXNativeTarget "AdaptiveNavigationBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8FBB36E2AF0CF61007C850A /* Debug */,
-				B8FBB36F2AF0CF61007C850A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8FBB3702AF0CF61007C850A /* Build configuration list for PBXNativeTarget "AdaptiveNavigationBarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8FBB3712AF0CF61007C850A /* Debug */,
-				B8FBB3722AF0CF61007C850A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
