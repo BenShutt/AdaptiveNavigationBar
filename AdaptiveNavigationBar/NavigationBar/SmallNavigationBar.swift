@@ -9,15 +9,19 @@ import SwiftUI
 
 struct SmallNavigationBar: View {
 
+    @Binding var progress: Double
+
     var body: some View {
         Text("Small Navigation Bar")
             .font(.system(size: 20, weight: .semibold))
             .padding()
+            .compositingGroup()
+            .opacity(progress)
     }
 }
 
 #Preview {
     Color.white.navigationBar {
-        SmallNavigationBar()
+        SmallNavigationBar(progress: .constant(1))
     }
 }

@@ -9,16 +9,18 @@ import SwiftUI
 
 struct AdaptiveNavigationBarView: View {
 
+    @Binding var progress: Double
+
     var body: some View {
         ZStack(alignment: .bottom) {
-            LargeNavigationBar()
-            SmallNavigationBar()
+            LargeNavigationBar(progress: $progress)
+            SmallNavigationBar(progress: $progress)
         }
     }
 }
 
 #Preview {
     Color.white.navigationBar {
-        AdaptiveNavigationBarView()
+        AdaptiveNavigationBarView(progress: .constant(0.5))
     }
 }

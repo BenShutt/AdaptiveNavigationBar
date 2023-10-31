@@ -18,7 +18,7 @@ struct Screen<Content: View>: View {
             }
         }
         .navigationBar {
-            AdaptiveNavigationBarView()
+            AdaptiveNavigationBarView(progress: .constant(1))
         }
     }
 }
