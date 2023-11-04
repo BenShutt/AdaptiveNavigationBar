@@ -10,18 +10,14 @@ import SwiftUI
 struct Screen<Content: View>: View {
 
     @ViewBuilder var content: () -> Content
-    @State private var scrollOffset: CGFloat = 0
+    @State private var offset: CGPoint = .zero
 
     var body: some View {
-        OffsetScrollView(
-            content: {
-                LazyVStack(spacing: 0) {
-                    content()
-                }
-            }, onScroll: { value in
-                scrollOffset = value.y
+        OffsetScrollView(offset: $offset) {
+            LazyVStack(spacing: 0) {
+                content()
             }
-        )
-        .navigationBar(scrollOffset: scrollOffset)
+        }
+        .navigationBar(scrollOffset: offset.y)
     }
 }

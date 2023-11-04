@@ -15,7 +15,7 @@ struct ContentView: View {
 
     var body: some View {
         Screen {
-            ForEach(colors, id: \.index) { index, color in
+            ForEach(colors, id: \.index) { _, color in
                 color
                     .frame(height: 50)
                     .frame(maxWidth: .infinity)

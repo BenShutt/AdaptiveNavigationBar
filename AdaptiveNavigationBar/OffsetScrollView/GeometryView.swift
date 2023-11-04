@@ -15,7 +15,7 @@ struct GeometryView: View {
         GeometryReader { proxy in
             Color.clear
                 .preference(
-                    key: OffsetScroll.self,
+                    key: ScrollOffset.self,
                     value: {
                         let origin = proxy.frame(in: .named(coordinateSpace)).origin
                         return CGPoint(x: -origin.x, y: -origin.y)

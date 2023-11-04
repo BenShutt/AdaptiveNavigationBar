@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-// TODO: Performance?
+// TODO: Performance? Is @Binding worse than closure?
 struct OffsetScrollView<Content: View>: View {
 
     private let coordinateSpace = "\(Self.self)"
+    @Binding var offset: CGPoint
     @ViewBuilder var content: () -> Content
-    var onScroll: (CGPoint) -> Void
 
     var body: some View {
         ScrollView {
@@ -22,8 +22,8 @@ struct OffsetScrollView<Content: View>: View {
                 }
         }
         .coordinateSpace(name: coordinateSpace)
-        .onPreferenceChange(OffsetScroll.self) { value in
-            onScroll(value)
+        .onPreferenceChange(ScrollOffset.self) { value in
+            offset = value
         }
     }
 }
