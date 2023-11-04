@@ -16,10 +16,10 @@ struct NavigationBar<Top: View>: ViewModifier {
             .safeAreaInset(edge: .top) {
                 top()
                     .frame(maxWidth: .infinity)
-                    .background(
+                    .background {
                         NavigationBarBackground()
                             .ignoresSafeArea()
-                    )
+                    }
             }
     }
 }

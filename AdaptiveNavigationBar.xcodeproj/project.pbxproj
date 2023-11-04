@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8ADA4612AF5D0DD00C9D02A /* OffsetScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */; };
+		B8ADA4632AF5D0E300C9D02A /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */; };
+		B8ADA4652AF5D3D800C9D02A /* OffsetScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4642AF5D3D800C9D02A /* OffsetScroll.swift */; };
 		B8FBB34A2AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */; };
 		B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB34B2AF0CF5F007C850A /* ContentView.swift */; };
 		B8FBB34E2AF0CF61007C850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBB34D2AF0CF61007C850A /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetScrollView.swift; sourceTree = "<group>"; };
+		B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
+		B8ADA4642AF5D3D800C9D02A /* OffsetScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetScroll.swift; sourceTree = "<group>"; };
 		B8FBB3462AF0CF5F007C850A /* AdaptiveNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveNavigationBarApp.swift; sourceTree = "<group>"; };
 		B8FBB34B2AF0CF5F007C850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8ADA45F2AF5D0BC00C9D02A /* OffsetScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */,
+				B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */,
+				B8ADA4642AF5D3D800C9D02A /* OffsetScroll.swift */,
+			);
+			path = OffsetScrollView;
+			sourceTree = "<group>";
+		};
 		B8FBB33D2AF0CF5F007C850A = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +81,7 @@
 		B8FBB3482AF0CF5F007C850A /* AdaptiveNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				B8ADA45F2AF5D0BC00C9D02A /* OffsetScrollView */,
 				B8FBB3832AF0D37C007C850A /* Extensions */,
 				B8FBB3732AF0CFDC007C850A /* NavigationBar */,
 				B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */,
@@ -176,12 +193,15 @@
 			files = (
 				B8FBB3792AF0D01F007C850A /* NavigationBar.swift in Sources */,
 				B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */,
+				B8ADA4612AF5D0DD00C9D02A /* OffsetScrollView.swift in Sources */,
+				B8ADA4652AF5D3D800C9D02A /* OffsetScroll.swift in Sources */,
 				B8FBB3772AF0CFF9007C850A /* SmallNavigationBar.swift in Sources */,
 				B8FBB37B2AF0D161007C850A /* AdaptiveNavigationBar.swift in Sources */,
 				B8FBB3852AF0D385007C850A /* Color+Extensions.swift in Sources */,
 				B8FBB3872AF0D461007C850A /* NavigationBarBackground.swift in Sources */,
 				B8FBB34A2AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift in Sources */,
 				B8FBB3752AF0CFEE007C850A /* LargeNavigationBar.swift in Sources */,
+				B8ADA4632AF5D0E300C9D02A /* GeometryView.swift in Sources */,
 				B8FBB3802AF0D279007C850A /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
