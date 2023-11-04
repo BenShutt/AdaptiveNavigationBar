@@ -23,26 +23,12 @@ struct NavigationBar: View {
 
     var body: some View {
         ZStack(alignment: .top) {
-            VStack(spacing: 5) {
-                Text("Large Navigation Bar")
-                    .font(.system(size: 26, weight: .bold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            LargeNavigationBar(vPadding: .vPadding * (1 - progress))
+                .opacity(1 - progress)
 
-                Text("With some other content which goes in the subtitle")
-                    .font(.system(size: 16, weight: .regular))
-                    .foregroundStyle(Color.gray)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
-            .padding(.vertical, 15 * (1 - progress))
-            .opacity(1 - progress)
-
-            Text("Small Navigation Bar")
-                .font(.system(size: 18, weight: .semibold))
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 10)
+            SmallNavigationBar()
                 .opacity(progress)
         }
-        .padding(.horizontal, 20)
         .background {
             NavigationBarBackground()
                 .ignoresSafeArea(edges: .top)
