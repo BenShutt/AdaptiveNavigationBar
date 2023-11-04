@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @State private var colors = (0..<20).map {
+        (index: $0, color: Color.random)
+    }
+
     var body: some View {
         Screen {
-            ForEach(0..<20) { _ in
-                Color.random
+            ForEach(colors, id: \.index) { index, color in
+                color
                     .frame(height: 50)
                     .frame(maxWidth: .infinity)
                     .padding()
@@ -20,6 +24,8 @@ struct ContentView: View {
         }
     }
 }
+
+// MARK: - Preview
 
 #Preview {
     ContentView()

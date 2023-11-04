@@ -24,6 +24,8 @@ struct NavigationBarBackground: View {
     }
 }
 
+// MARK: - Preview
+
 #Preview {
     NavigationBarBackground()
 }

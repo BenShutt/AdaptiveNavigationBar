@@ -10,28 +10,18 @@ import SwiftUI
 struct Screen<Content: View>: View {
 
     @ViewBuilder var content: () -> Content
-    @State private var isLarge = false
+    @State private var scrollOffset: CGFloat = 0
 
     var body: some View {
         OffsetScrollView(
             content: {
                 LazyVStack(spacing: 0) {
-                    LargeNavigationBar()
                     content()
                 }
-            }, onScroll: { point in
-                let isScrolled = point.y >= 20
-                if isScrolled != isLarge {
-                    withAnimation {
-                        isLarge = isScrolled
-                    }
-                }
-
+            }, onScroll: { value in
+                scrollOffset = value.y
             }
         )
-        .overlay(alignment: .top) {
-            SmallNavigationBar()
-                .opacity(isLarge ? 1 : 0)
-        }
+        .navigationBar(scrollOffset: scrollOffset)
     }
 }

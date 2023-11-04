@@ -11,15 +11,16 @@ struct GeometryView: View {
 
     var coordinateSpace: String
 
-    private func offset(with proxy: GeometryProxy) -> CGPoint {
-        let origin = proxy.frame(in: .named(coordinateSpace)).origin
-        return CGPoint(x: -origin.x, y: -origin.y)
-    }
-
     var body: some View {
         GeometryReader { proxy in
             Color.clear
-                .preference(key: OffsetScroll.self, value: offset(with: proxy))
+                .preference(
+                    key: OffsetScroll.self,
+                    value: {
+                        let origin = proxy.frame(in: .named(coordinateSpace)).origin
+                        return CGPoint(x: -origin.x, y: -origin.y)
+                    }()
+                )
         }
     }
 }
