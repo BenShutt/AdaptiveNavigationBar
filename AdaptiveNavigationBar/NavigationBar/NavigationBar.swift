@@ -10,24 +10,25 @@ import SwiftUI
 /// A view used as a custom top safe area for navigation bar UI
 struct NavigationBar: View {
 
-    /// Furthest the UI adapts for a scroll offset
-    private let maxScrollOffset: CGFloat = 50
+    /// Critical scroll offset in Y for the different states
+    private let maxOffsetY: CGFloat = 50
 
     /// The content offset in Y of the scroll view
-    var scrollOffset: CGFloat
+    var offsetY: CGFloat
 
     /// Value in `[0, 1]` from not scrolled to fully scrolled
     private var progress: CGFloat {
-        max(0, min(maxScrollOffset, scrollOffset)) / maxScrollOffset
+        max(0, min(maxOffsetY, offsetY)) / maxOffsetY
     }
 
     var body: some View {
         ZStack(alignment: .top) {
             LargeNavigationBar(vPadding: .vPadding * (1 - progress))
-                .opacity(1 - progress)
+                .offset(y: -10 * progress)
+                .opacity(max(0, CGFloat(1) - 2 * progress))
 
             SmallNavigationBar()
-                .opacity(progress)
+                .opacity(max(0, 2 * progress - CGFloat(1)))
         }
         .background {
             NavigationBarBackground()
@@ -40,9 +41,9 @@ struct NavigationBar: View {
 
 extension View {
 
-    func navigationBar(scrollOffset: CGFloat) -> some View {
+    func navigationBar(offsetY: CGFloat) -> some View {
         modifier(StickyTop {
-            NavigationBar(scrollOffset: scrollOffset)
+            NavigationBar(offsetY: offsetY)
         })
     }
 }
@@ -50,5 +51,5 @@ extension View {
 // MARK: - Preview
 
 #Preview {
-    Color.white.navigationBar(scrollOffset: 0)
+    Color.white.navigationBar(offsetY: 0)
 }

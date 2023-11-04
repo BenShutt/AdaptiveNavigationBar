@@ -9,10 +9,10 @@ import SwiftUI
 
 struct LargeNavigationBar: View {
 
-    var vPadding: CGFloat = .vPadding
+    var vPadding: CGFloat
 
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(alignment: .leading, spacing: .small) {
             Text("Large Navigation Bar")
                 .font(.system(size: .largeFont, weight: .bold))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -22,6 +22,7 @@ struct LargeNavigationBar: View {
                 .foregroundStyle(Color.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .multilineTextAlignment(.leading)
         .padding(.horizontal, .hPadding)
         .padding(.vertical, vPadding)
     }

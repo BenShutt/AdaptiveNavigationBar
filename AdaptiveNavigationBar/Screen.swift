@@ -18,6 +18,6 @@ struct Screen<Content: View>: View {
                 content()
             }
         }
-        .navigationBar(scrollOffset: offset.y)
+        .navigationBar(offsetY: offset.y)
     }
 }

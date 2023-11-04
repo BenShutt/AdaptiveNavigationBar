@@ -15,5 +15,6 @@ struct SmallNavigationBar: View {
             .frame(maxWidth: .infinity)
             .padding(.horizontal, .hPadding)
             .padding(.vertical, .vPadding)
+            .multilineTextAlignment(.center)
     }
 }
