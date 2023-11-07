@@ -13,6 +13,7 @@
 		B8ADA4682AF60CBC00C9D02A /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4672AF60CBC00C9D02A /* LargeNavigationBar.swift */; };
 		B8ADA46A2AF60CF600C9D02A /* SmallNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4692AF60CF600C9D02A /* SmallNavigationBar.swift */; };
 		B8ADA46C2AF60D1A00C9D02A /* CGFloat+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */; };
+		B8C06C792AFA2FCD00F49373 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */; };
 		B8FBB34A2AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */; };
 		B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB34B2AF0CF5F007C850A /* ContentView.swift */; };
 		B8FBB34E2AF0CF61007C850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBB34D2AF0CF61007C850A /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		B8ADA4672AF60CBC00C9D02A /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
 		B8ADA4692AF60CF600C9D02A /* SmallNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallNavigationBar.swift; sourceTree = "<group>"; };
 		B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Values.swift"; sourceTree = "<group>"; };
+		B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		B8FBB3462AF0CF5F007C850A /* AdaptiveNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveNavigationBarApp.swift; sourceTree = "<group>"; };
 		B8FBB34B2AF0CF5F007C850A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				B8FBB3842AF0D385007C850A /* Color+Extensions.swift */,
 				B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */,
+				B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				B8ADA46A2AF60CF600C9D02A /* SmallNavigationBar.swift in Sources */,
 				B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */,
 				B8ADA4612AF5D0DD00C9D02A /* OffsetScrollView.swift in Sources */,
+				B8C06C792AFA2FCD00F49373 /* View+Extensions.swift in Sources */,
 				B8ADA4652AF5D3D800C9D02A /* ScrollOffset.swift in Sources */,
 				B8FBB37B2AF0D161007C850A /* NavigationBar.swift in Sources */,
 				B8ADA4682AF60CBC00C9D02A /* LargeNavigationBar.swift in Sources */,
