@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// TODO: Performance? Is @Binding worse than closure?
+// TODO: Is a @Binding less performant than a closure?
 struct OffsetScrollView<Content: View>: View {
 
     private let coordinateSpace = "\(Self.self)"

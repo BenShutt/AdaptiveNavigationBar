@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+/// Clips a view (with a fixed vertical size) by the height scale factor
 struct ClippedHeight: ViewModifier {
 
+    /// The maximum height of the content
     @State private var maxHeight: CGFloat = 0
+
+    /// Map the maximum height to the clipped height (scaling)
     var scaledHeight: (CGFloat) -> CGFloat
 
     func body(content: Content) -> some View {
