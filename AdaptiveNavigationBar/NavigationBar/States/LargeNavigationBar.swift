@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View for the large navigation bar state
 struct LargeNavigationBar: View {
 
     var body: some View {

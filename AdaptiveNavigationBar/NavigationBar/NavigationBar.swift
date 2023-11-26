@@ -17,7 +17,7 @@ struct NavigationBar: View {
     /// The content offset in Y of the scroll view
     var offsetY: CGFloat
 
-    /// Value in `[0, 1]` from not scrolled to fully scrolled
+    /// Value in `[0, 1]` from not scrolled to fully scrolled (respectively)
     private var progress: CGFloat {
         max(0, min(maxOffsetY, offsetY)) / maxOffsetY
     }
@@ -70,5 +70,5 @@ extension View {
 // MARK: - Preview
 
 #Preview {
-    Color.white.navigationBar(offsetY: 45)
+    Color.white.navigationBar(offsetY: 0)
 }
