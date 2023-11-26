@@ -3,7 +3,7 @@
 An example of a SwiftUI navigation bar that transitions from a large to a small state based on the scroll offset.
 The implementation allows for any custom `SmallNavigationBar` and `LargeNavigationBar` SwiftUI views to be used for the two states.
 
-![Demo](Docs/demo.gif)
+![Demo](Docs/VStack.gif)
 
 ## Questions
 
