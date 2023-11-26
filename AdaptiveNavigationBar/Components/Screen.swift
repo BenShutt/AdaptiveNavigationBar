@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Screen<Content: View>: View {
 
-    @ViewBuilder var content: () -> Content
     @State private var offset: CGPoint = .zero
+    @ViewBuilder var content: () -> Content
 
     var body: some View {
         OffsetScrollView(offset: $offset) {

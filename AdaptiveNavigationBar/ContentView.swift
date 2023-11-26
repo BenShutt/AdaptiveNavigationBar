@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var colors = (0..<20).map {
-        (index: $0, color: Color.random)
+    @State private var colors = (0..<20).map { index in
+        (index: index, color: Color.random)
     }
 
     var body: some View {

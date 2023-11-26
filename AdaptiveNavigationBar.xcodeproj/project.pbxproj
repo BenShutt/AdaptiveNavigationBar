@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8865ECB2B12FE3F0013DC6D /* ClippedHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8865ECA2B12FE3F0013DC6D /* ClippedHeight.swift */; };
+		B8865ECE2B13036F0013DC6D /* String+LoremIpsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8865ECD2B13036F0013DC6D /* String+LoremIpsum.swift */; };
 		B8ADA4612AF5D0DD00C9D02A /* OffsetScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */; };
-		B8ADA4632AF5D0E300C9D02A /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */; };
-		B8ADA4652AF5D3D800C9D02A /* ScrollOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4642AF5D3D800C9D02A /* ScrollOffset.swift */; };
 		B8ADA4682AF60CBC00C9D02A /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4672AF60CBC00C9D02A /* LargeNavigationBar.swift */; };
 		B8ADA46A2AF60CF600C9D02A /* SmallNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA4692AF60CF600C9D02A /* SmallNavigationBar.swift */; };
 		B8ADA46C2AF60D1A00C9D02A /* CGFloat+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */; };
@@ -26,9 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8865ECA2B12FE3F0013DC6D /* ClippedHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedHeight.swift; sourceTree = "<group>"; };
+		B8865ECD2B13036F0013DC6D /* String+LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LoremIpsum.swift"; sourceTree = "<group>"; };
 		B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetScrollView.swift; sourceTree = "<group>"; };
-		B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
-		B8ADA4642AF5D3D800C9D02A /* ScrollOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffset.swift; sourceTree = "<group>"; };
 		B8ADA4672AF60CBC00C9D02A /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
 		B8ADA4692AF60CF600C9D02A /* SmallNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallNavigationBar.swift; sourceTree = "<group>"; };
 		B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Values.swift"; sourceTree = "<group>"; };
@@ -56,23 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8ADA45F2AF5D0BC00C9D02A /* OffsetScrollView */ = {
+		B8865ECC2B1300620013DC6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B8FBB3782AF0D01F007C850A /* StickyTop.swift */,
+				B8865ECA2B12FE3F0013DC6D /* ClippedHeight.swift */,
+				B8FBB37F2AF0D279007C850A /* Screen.swift */,
 				B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */,
-				B8ADA4622AF5D0E300C9D02A /* GeometryView.swift */,
-				B8ADA4642AF5D3D800C9D02A /* ScrollOffset.swift */,
 			);
-			path = OffsetScrollView;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		B8ADA4662AF60CB100C9D02A /* Components */ = {
+		B8ADA4662AF60CB100C9D02A /* States */ = {
 			isa = PBXGroup;
 			children = (
 				B8ADA4672AF60CBC00C9D02A /* LargeNavigationBar.swift */,
 				B8ADA4692AF60CF600C9D02A /* SmallNavigationBar.swift */,
 			);
-			path = Components;
+			path = States;
 			sourceTree = "<group>";
 		};
 		B8FBB33D2AF0CF5F007C850A = {
@@ -94,11 +95,10 @@
 		B8FBB3482AF0CF5F007C850A /* AdaptiveNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				B8ADA45F2AF5D0BC00C9D02A /* OffsetScrollView */,
+				B8865ECC2B1300620013DC6D /* Components */,
 				B8FBB3832AF0D37C007C850A /* Extensions */,
 				B8FBB3732AF0CFDC007C850A /* NavigationBar */,
 				B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */,
-				B8FBB37F2AF0D279007C850A /* Screen.swift */,
 				B8FBB34B2AF0CF5F007C850A /* ContentView.swift */,
 				B8FBB34D2AF0CF61007C850A /* Assets.xcassets */,
 				B8FBB34F2AF0CF61007C850A /* Preview Content */,
@@ -117,8 +117,7 @@
 		B8FBB3732AF0CFDC007C850A /* NavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				B8ADA4662AF60CB100C9D02A /* Components */,
-				B8FBB3782AF0D01F007C850A /* StickyTop.swift */,
+				B8ADA4662AF60CB100C9D02A /* States */,
 				B8FBB37A2AF0D161007C850A /* NavigationBar.swift */,
 				B8FBB3862AF0D461007C850A /* NavigationBarBackground.swift */,
 			);
@@ -131,6 +130,7 @@
 				B8FBB3842AF0D385007C850A /* Color+Extensions.swift */,
 				B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */,
 				B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */,
+				B8865ECD2B13036F0013DC6D /* String+LoremIpsum.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,15 +209,15 @@
 				B8ADA46A2AF60CF600C9D02A /* SmallNavigationBar.swift in Sources */,
 				B8FBB34C2AF0CF5F007C850A /* ContentView.swift in Sources */,
 				B8ADA4612AF5D0DD00C9D02A /* OffsetScrollView.swift in Sources */,
+				B8865ECB2B12FE3F0013DC6D /* ClippedHeight.swift in Sources */,
 				B8C06C792AFA2FCD00F49373 /* View+Extensions.swift in Sources */,
-				B8ADA4652AF5D3D800C9D02A /* ScrollOffset.swift in Sources */,
 				B8FBB37B2AF0D161007C850A /* NavigationBar.swift in Sources */,
 				B8ADA4682AF60CBC00C9D02A /* LargeNavigationBar.swift in Sources */,
 				B8FBB3852AF0D385007C850A /* Color+Extensions.swift in Sources */,
 				B8ADA46C2AF60D1A00C9D02A /* CGFloat+Values.swift in Sources */,
 				B8FBB3872AF0D461007C850A /* NavigationBarBackground.swift in Sources */,
+				B8865ECE2B13036F0013DC6D /* String+LoremIpsum.swift in Sources */,
 				B8FBB34A2AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift in Sources */,
-				B8ADA4632AF5D0E300C9D02A /* GeometryView.swift in Sources */,
 				B8FBB3802AF0D279007C850A /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

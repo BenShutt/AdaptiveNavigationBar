@@ -9,15 +9,15 @@ import SwiftUI
 
 extension View {
 
-    func onSizeChanged(
-        _ action: @escaping (CGSize) -> Void
-    ) -> some View {
-        background {
+    func onSizeChanged(_ action: @escaping (CGSize) -> Void) -> some View {
+        background(
             GeometryReader { proxy in
-                Color.clear
-                    .preference(key: SizePreferenceKey.self, value: proxy.size)
+                Color.clear.preference(
+                    key: SizePreferenceKey.self,
+                    value: proxy.size
+                )
             }
-        }
+        )
         .onPreferenceChange(SizePreferenceKey.self) { value in
             action(value)
         }

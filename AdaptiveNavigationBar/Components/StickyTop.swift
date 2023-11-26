@@ -7,14 +7,16 @@
 
 import SwiftUI
 
+/// Using `VStack` in place of `safeAreaInset(edge: .top)` since the
+/// safe area causes glitches/lag while scrolling.
 struct StickyTop<Top: View>: ViewModifier {
 
     @ViewBuilder var top: () -> Top
 
     func body(content: Content) -> some View {
-        content
-            .safeAreaInset(edge: .top) {
-                top()
-            }
+        VStack(spacing: 0) {
+            top()
+            content
+        }
     }
 }

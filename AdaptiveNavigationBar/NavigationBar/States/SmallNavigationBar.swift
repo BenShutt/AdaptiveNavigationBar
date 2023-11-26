@@ -12,9 +12,9 @@ struct SmallNavigationBar: View {
     var body: some View {
         Text("Small Navigation Bar")
             .font(.system(size: .smallFont, weight: .semibold))
+            .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity)
             .padding(.horizontal, .hPadding)
             .padding(.vertical, .vPadding)
-            .multilineTextAlignment(.center)
     }
 }

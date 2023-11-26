@@ -15,12 +15,13 @@ struct LargeNavigationBar: View {
                 .font(.system(size: .largeFont, weight: .bold))
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-            Text("With even more content that is used for the subtitle to add another line for preview")
+            Text(verbatim: .loremIpsum(maxLength: 90))
                 .font(.system(size: .smallFont, weight: .regular))
                 .foregroundStyle(Color.gray)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .multilineTextAlignment(.leading)
+        .frame(maxWidth: .infinity)
         .padding(.horizontal, .hPadding)
         .padding(.vertical, .vPadding)
     }

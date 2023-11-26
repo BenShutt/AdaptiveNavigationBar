@@ -7,14 +7,9 @@
 
 import SwiftUI
 
-/// A view used as a custom top safe area for navigation bar UI
+/// Custom view used for navigation bar UI.
+/// The view transitions from a large to small state as the scroll offset increases.
 struct NavigationBar: View {
-
-    /// Max height of the large navigation bar
-    @State private var maxLargeHeight: CGFloat = 0
-
-    /// Max height of the small navigation bar
-    @State private var maxSmallHeight: CGFloat = 0
 
     /// Critical scroll offset in Y for the different states
     private let maxOffsetY: CGFloat = 100
@@ -27,39 +22,37 @@ struct NavigationBar: View {
         max(0, min(maxOffsetY, offsetY)) / maxOffsetY
     }
 
+    /// Opacity of the small navigation bar as a function of progress
+    private var smallOpacity: CGFloat {
+        max(0, 2 * progress - 1)
+    }
+
+    /// Opacity of the large navigation bar as a function of progress
+    private var largeOpacity: CGFloat {
+        max(0, 1 - 2 * progress)
+    }
+
+    /// Offset in Y of the large navigation bar as a function of progress
+    private var largeOffset: CGFloat {
+        min(0, max(-offsetY, -maxOffsetY))
+    }
+
     var body: some View {
-        Color.clear
-            .overlay(alignment: .top) {
-                LargeNavigationBar()
-                    .opacity(max(0, CGFloat(1) - 2 * progress))
-                    .onSizeChanged { size in
-                        let newSize = size.height
-                        if newSize > maxLargeHeight {
-                            maxLargeHeight = newSize
-                        }
-                    }
-                    .offset(y: min(0, max(-offsetY, -maxOffsetY)))
-                    .fixedSize(horizontal: false, vertical: true) // TODO
-            }
-            .overlay(alignment: .top) {
-                SmallNavigationBar()
-                    .opacity(max(0, 2 * progress - CGFloat(1)))
-                    .onSizeChanged { size in
-                        let newSize = size.height
-                        if newSize > maxSmallHeight {
-                            maxSmallHeight = newSize
-                        }
-                    }
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            .frame(maxWidth: .infinity)
-            .frame(height: max(maxLargeHeight * (1 - progress), maxSmallHeight))
-            .clipped()
-            .background {
-                NavigationBarBackground()
-                    .ignoresSafeArea(edges: .top)
-            }
-            .overlay(Color.orange.opacity(0.1))
+        ZStack(alignment: .top) {
+            SmallNavigationBar()
+                .opacity(smallOpacity)
+
+            LargeNavigationBar()
+                .opacity(largeOpacity)
+                .offset(y: largeOffset)
+                .modifier(ClippedHeight { maxHeight in
+                    maxHeight * (1 - progress)
+                })
+        }
+        .background {
+            NavigationBarBackground()
+                .ignoresSafeArea(edges: .top)
+        }
     }
 }
 
@@ -79,40 +72,3 @@ extension View {
 #Preview {
     Color.white.navigationBar(offsetY: 45)
 }
-
-// TODO: Tmp
-struct ProgressLayout: Layout {
-
-    var height: CGFloat
-
-    func sizeThatFits(
-        proposal: ProposedViewSize,
-        subviews: Subviews,
-        cache: inout ()
-    ) -> CGSize {
-        subviews.reduce(CGSize.zero) { result, subview in
-            let size = subview.sizeThatFits(proposal)
-            return CGSize(
-                width: max(result.width, size.width),
-                height: max(result.height, size.height * subview.priority)
-            )
-        }
-    }
-
-    func placeSubviews(
-        in bounds: CGRect,
-        proposal: ProposedViewSize,
-        subviews: Subviews,
-        cache: inout ()
-    ) {
-        let width = proposal.width ?? 0
-        subviews.forEach { subview in
-            subview.place(
-                at: bounds.origin,
-                anchor: .topLeading,
-                proposal: .init(width: width, height: nil)
-            )
-        }
-    }
-}
-
