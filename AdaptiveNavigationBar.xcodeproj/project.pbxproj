@@ -59,10 +59,10 @@
 		B8865ECC2B1300620013DC6D /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B8FBB3782AF0D01F007C850A /* StickyTop.swift */,
 				B8865ECA2B12FE3F0013DC6D /* ClippedHeight.swift */,
-				B8FBB37F2AF0D279007C850A /* Screen.swift */,
 				B8ADA4602AF5D0DD00C9D02A /* OffsetScrollView.swift */,
+				B8FBB37F2AF0D279007C850A /* Screen.swift */,
+				B8FBB3782AF0D01F007C850A /* StickyTop.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -98,10 +98,10 @@
 				B8865ECC2B1300620013DC6D /* Components */,
 				B8FBB3832AF0D37C007C850A /* Extensions */,
 				B8FBB3732AF0CFDC007C850A /* NavigationBar */,
+				B8FBB34F2AF0CF61007C850A /* Preview Content */,
 				B8FBB3492AF0CF5F007C850A /* AdaptiveNavigationBarApp.swift */,
 				B8FBB34B2AF0CF5F007C850A /* ContentView.swift */,
 				B8FBB34D2AF0CF61007C850A /* Assets.xcassets */,
-				B8FBB34F2AF0CF61007C850A /* Preview Content */,
 			);
 			path = AdaptiveNavigationBar;
 			sourceTree = "<group>";
@@ -127,10 +127,10 @@
 		B8FBB3832AF0D37C007C850A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B8FBB3842AF0D385007C850A /* Color+Extensions.swift */,
 				B8ADA46B2AF60D1A00C9D02A /* CGFloat+Values.swift */,
-				B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */,
+				B8FBB3842AF0D385007C850A /* Color+Extensions.swift */,
 				B8865ECD2B13036F0013DC6D /* String+LoremIpsum.swift */,
+				B8C06C782AFA2FCD00F49373 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

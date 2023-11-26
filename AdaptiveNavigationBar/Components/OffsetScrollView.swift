@@ -17,9 +17,9 @@ struct OffsetScrollView<Content: View>: View {
     var body: some View {
         ScrollView {
             content()
-                .background {
+                .background(
                     GeometryView(coordinateSpace: coordinateSpace)
-                }
+                )
         }
         .coordinateSpace(name: coordinateSpace)
         .onPreferenceChange(ScrollOffset.self) { value in
