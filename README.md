@@ -2,6 +2,8 @@
 
 An example of a SwiftUI navigation bar that transitions from a large to small state based on scroll offset (in Y).
 
+![Demo](https://raw.githubusercontent.com/BenShutt/AdaptiveNavigationBar/develop/Docs/demo.gif)
+
 ## Questions
 
 * `StickyTop` uses a `VStack` for the navigation bar layout since `safeAreaInset(edge: .top)` causes scroll glitches
