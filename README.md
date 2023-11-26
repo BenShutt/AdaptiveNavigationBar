@@ -7,7 +7,7 @@ The implementation allows for any custom `SmallNavigationBar` and `LargeNavigati
 
 ## Questions
 
-* `StickyTop` uses a `VStack` for the navigation bar layout since `safeAreaInset(edge: .top)` causes unexpected scroll glitches?
+* `StickyTop` uses a `VStack` for the navigation bar layout since `safeAreaInset(edge: .top)` causes unexpected scroll glitches? Asked on [Stack Overflow](https://stackoverflow.com/q/77550870/5024990).
 * `OffsetScrollView` adds a `GeometryReader` to the background of its content to measure scroll offset. Is this performant?
 
 ## References
