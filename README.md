@@ -2,7 +2,7 @@
 
 An example of a SwiftUI navigation bar that transitions from a large to small state based on scroll offset (in Y).
 
-![Demo](https://raw.githubusercontent.com/BenShutt/AdaptiveNavigationBar/develop/Docs/demo.gif)
+![Demo](Docs/demo.gif)
 
 ## Questions
 
